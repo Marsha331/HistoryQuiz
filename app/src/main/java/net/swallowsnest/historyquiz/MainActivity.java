@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
     }
 
-    public void gradeQuiz() {
+    public void gradeQuiz(View view) {
         gradeQuestion1();
         gradeQuestion2();
         gradeQuestion3();
@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
         gradeQuestion5();
         gradeQuestion6();
         gradeQuestion7();
-        Toast.makeText(this, "Your score is " + score + "out of 7 possible.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Your score is " + score + " out of 7 possible.", Toast.LENGTH_LONG).show();
+
+        resetScore();
     }
 
     private void gradeQuestion1() {
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         EditText question = (EditText) findViewById(R.id.et1);
         String answer = question.getText().toString();
 
-        if (answer == "HIROSHIMA") {
+        if (answer.equals("HIROSHIMA")) {
             score += 1;
         }
     }
@@ -101,5 +103,9 @@ public class MainActivity extends AppCompatActivity {
         if (answer == R.id.radio_1787) {
             score += 1;
         }
+    }
+
+    public void resetScore() {
+        score = 0;
     }
 }

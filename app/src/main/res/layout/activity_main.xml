@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/rg1"
-        android:onClick="gradeQuestion1">
+        >
 
     <RadioButton
         android:id="@+id/radio_France"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/rg2"
-        android:onClick="gradeQuestion2">
+        >
 
     <RadioButton
         android:id="@+id/radio_Lincoln"
@@ -107,21 +107,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maryland"
-        android:onClick="gradeQuestion3"/>
+        />
 
     <CheckBox
         android:id="@+id/check_NewYork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New York"
-        android:onClick="gradeQuestion3"/>
+        />
 
     <CheckBox
         android:id="@+id/check_Virginia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Virginia"
-        android:onClick="gradeQuestion3"/>
+        />
 
     <CheckBox
         android:id="@+id/check_Delaware"
@@ -129,7 +129,7 @@
         android:layout_height="wrap_content"
         android:text="Delaware"
         android:layout_marginBottom="16dp"
-        android:onClick="gradeQuestion3"/>
+       />
 
     <TextView
         android:id="@+id/qn4"
@@ -143,7 +143,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/rg3"
-        android:onClick="gradeQuestion4">
+        >
 
     <RadioButton
         android:id="@+id/radio_Davis"
@@ -181,7 +181,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/rg4"
-        android:onClick="gradeQuestion5">
+        >
 
     <RadioButton
         android:id="@+id/radio_1778"
@@ -220,7 +220,7 @@
         android:hint="ANSWER IN CAPS"
         android:layout_marginBottom="16dp"
         android:inputType="textCapCharacters"
-        android:onClick="gradeQuestion6"/>
+        />
 
     <TextView
         android:id="@+id/qn7"
@@ -234,7 +234,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/rg5"
-        android:onClick="gradeQuestion7"
+
         >
 
     <RadioButton
