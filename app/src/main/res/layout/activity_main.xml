@@ -1,273 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="net.swallowsnest.historyquiz.MainActivity">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Can you pass 5th grade history?"
-        android:textAllCaps="true"
-        android:layout_gravity="center_horizontal"
-        android:padding="16dp"
-        android:textSize="18sp"/>
-
-    <TextView
-        android:id="@+id/qn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What country did the US fight in the War of 1812?"
-        android:layout_marginBottom="8dp"/>
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
-        android:id="@+id/rg1"
-        >
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="net.swallowsnest.historyquiz.MainActivity">
 
-    <RadioButton
-        android:id="@+id/radio_France"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="France" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-    <RadioButton
-        android:id="@+id/radio_Britain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Britain" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Can you pass 5th grade history?"
+                android:textAllCaps="true"
+                android:textSize="20sp" />
+        </LinearLayout>
 
-    <RadioButton
-        android:id="@+id/radio_Germany"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Germany"
-        android:layout_marginBottom="16dp" />
-    </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/qn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Who was the final commander of the Union Army in the Civil War?"
-        android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/qn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="What country did the US fight in the War of 1812?" />
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rg2"
-        >
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radio_Lincoln"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Abraham Lincoln"
-        />
+                <RadioButton
+                    android:id="@+id/radio_France"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="France" />
 
-    <RadioButton
-        android:id="@+id/radio_Grant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ulysses S. Grant"
-        />
+                <RadioButton
+                    android:id="@+id/radio_Britain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Britain" />
 
-    <RadioButton
-        android:id="@+id/radio_Lee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Robert E. Lee"
-        android:layout_marginBottom="16dp"
-        />
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio_Germany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Germany" />
+            </RadioGroup>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/qn3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What two states gave land to create Washington D.C.?"
-        android:layout_marginBottom="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-    <CheckBox
-        android:id="@+id/check_Maryland"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Maryland"
-        />
+            <TextView
+                android:id="@+id/qn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="Who was the final commander of the Union Army in the Civil War?" />
 
-    <CheckBox
-        android:id="@+id/check_NewYork"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New York"
-        />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/check_Virginia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Virginia"
-        />
+                <RadioButton
+                    android:id="@+id/radio_Lincoln"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abraham Lincoln" />
 
-    <CheckBox
-        android:id="@+id/check_Delaware"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delaware"
-        android:layout_marginBottom="16dp"
-       />
+                <RadioButton
+                    android:id="@+id/radio_Grant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ulysses S. Grant" />
 
-    <TextView
-        android:id="@+id/qn4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Who was the President of the Confederate States during the Civil War?"
-        android:layout_marginBottom="8dp"/>
+                <RadioButton
+                    android:id="@+id/radio_Lee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Robert E. Lee" />
+            </RadioGroup>
+        </LinearLayout>
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rg3"
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-    <RadioButton
-        android:id="@+id/radio_Davis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jefferson Davis"
-        />
+            <TextView
+                android:id="@+id/qn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="What two states gave land to create Washington D.C.?" />
 
-    <RadioButton
-        android:id="@+id/radio_Jefferson"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thomas Jefferson"
-        />
+            <CheckBox
+                android:id="@+id/check_Maryland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maryland" />
 
-    <RadioButton
-        android:id="@+id/radio_ELee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Robert E. Lee"
-        android:layout_marginBottom="16dp"
-        />
+            <CheckBox
+                android:id="@+id/check_NewYork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York" />
 
-    </RadioGroup>
+            <CheckBox
+                android:id="@+id/check_Virginia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virginia" />
 
-    <TextView
-        android:id="@+id/qn5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What year was the Boston Tea Party?"
-        android:layout_marginBottom="8dp"/>
+            <CheckBox
+                android:id="@+id/check_Delaware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Delaware" />
+        </LinearLayout>
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rg4"
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-    <RadioButton
-        android:id="@+id/radio_1778"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1778"
-        />
+            <TextView
+                android:id="@+id/qn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="Who was the President of the Confederate States during the Civil War?" />
 
-    <RadioButton
-        android:id="@+id/radio_1776"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1776"
-        />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radio_1773"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1773"
-        android:layout_marginBottom="16dp"
-        />
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio_Davis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jefferson Davis" />
 
-    <TextView
-        android:id="@+id/qn6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Which city was attacked by the first atomic bomb?"
-        android:layout_marginBottom="8dp"/>
+                <RadioButton
+                    android:id="@+id/radio_Jefferson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thomas Jefferson" />
 
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="ANSWER IN CAPS"
-        android:layout_marginBottom="16dp"
-        android:inputType="textCapCharacters"
-        />
+                <RadioButton
+                    android:id="@+id/radio_ELee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Robert E. Lee" />
 
-    <TextView
-        android:id="@+id/qn7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What year was the Constitution written?"
-        android:layout_marginBottom="8dp"/>
+            </RadioGroup>
+        </LinearLayout>
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rg5"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-        >
+            <TextView
+                android:id="@+id/qn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="What year was the Boston Tea Party?" />
 
-    <RadioButton
-        android:id="@+id/radio_1777"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1777"
-        />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radio_1776_again"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1776"
-        />
+                <RadioButton
+                    android:id="@+id/radio_1778"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1778" />
 
-    <RadioButton
-        android:id="@+id/radio_1787"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1787"
-        android:layout_marginBottom="16dp"
-        />
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio_1776"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1776" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Grade Me!"
-        android:textAllCaps="true"
-        android:id="@+id/grade_button"
-        android:onClick="gradeQuiz"/>
+                <RadioButton
+                    android:id="@+id/radio_1773"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="1773" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/qn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="Which city was attacked by the first atomic bomb?" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="type city name here"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/qn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="What year was the Constitution written?" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_1777"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1777" />
+
+                <RadioButton
+                    android:id="@+id/radio_1776_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1776" />
+
+                <RadioButton
+                    android:id="@+id/radio_1787"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="1787" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/grade_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gradeQuiz"
+                android:text="Grade Me!"
+                android:textAllCaps="true" />
+        </LinearLayout>
 
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
